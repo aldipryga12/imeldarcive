@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Imeldarcive</title>
+  <meta name="description" content="Kumpulan cerita dan kenangan Imelda." />
+  <style>
+    :root{--bg:#08111f;--panel:#0d1b2d;--text:#eef6ff;--muted:#a7b8cc;--line:rgba(255,255,255,.12);--accent:#83b8ff}
+    *{box-sizing:border-box} body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,sans-serif;background:radial-gradient(circle at top,#112a48 0,#08111f 48%,#050b13 100%);color:var(--text)}
+    .wrap{width:min(1080px,92vw);margin:auto}.hero{min-height:82vh;display:grid;place-items:center;text-align:center;padding:72px 0}.eyebrow{letter-spacing:.28em;text-transform:uppercase;font-size:.78rem;color:var(--accent)}
+    h1{font-family:Georgia,serif;font-size:clamp(3.3rem,10vw,7.5rem);font-weight:400;margin:.25em 0 .12em}.hero p{max-width:650px;margin:0 auto;color:var(--muted);font-size:1.05rem;line-height:1.8}
+    .scroll{display:inline-block;margin-top:34px;color:var(--text);text-decoration:none;border:1px solid var(--line);border-radius:999px;padding:12px 18px}
+    section{padding:70px 0}.section-head{display:flex;justify-content:space-between;align-items:end;gap:20px;margin-bottom:28px}.section-head h2{font-family:Georgia,serif;font-size:clamp(2rem,5vw,3.5rem);font-weight:400;margin:0}.section-head p{color:var(--muted);margin:0;max-width:440px;line-height:1.7}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.card{aspect-ratio:4/5;border:1px solid var(--line);border-radius:22px;overflow:hidden;position:relative;background:linear-gradient(145deg,#15304e,#0b1726)}
+    .card::after{content:"Tambahkan foto kenangan";position:absolute;inset:auto 18px 18px;color:#dcecff;font-size:.92rem;letter-spacing:.03em}.card:nth-child(2){aspect-ratio:1/1}.card:nth-child(5){aspect-ratio:1/1}
+    .note{border:1px solid var(--line);border-radius:24px;padding:28px;background:rgba(255,255,255,.035);color:var(--muted);line-height:1.8}.note strong{color:var(--text)}
+    footer{padding:50px 0 80px;color:#7890aa;text-align:center;font-size:.9rem}.heart{color:#b9d5ff}
+    @media(max-width:760px){.hero{min-height:70vh}.grid{grid-template-columns:repeat(2,1fr)}.section-head{display:block}.section-head p{margin-top:10px}}
+  </style>
+</head>
+<body>
+  <main>
+    <header class="hero wrap">
+      <div>
+        <div class="eyebrow">A small archive of memories</div>
+        <h1>Imeldarcive</h1>
+        <p>Sebuah ruang kecil untuk menyimpan potongan waktu, foto, dan cerita yang terlalu berharga untuk hilang begitu saja.</p>
+        <a class="scroll" href="#memories">Lihat kenangan ↓</a>
+      </div>
+    </header>
+
+    <section id="memories" class="wrap">
+      <div class="section-head">
+        <h2>Our Memories</h2>
+        <p>Nanti foto-foto pilihan bisa dimasukkan ke sini. Layout sudah dibuat responsif untuk HP dan desktop.</p>
+      </div>
+      <div class="grid">
+        <div class="card"></div><div class="card"></div><div class="card"></div>
+        <div class="card"></div><div class="card"></div><div class="card"></div>
+      </div>
+    </section>
+
+    <section class="wrap">
+      <div class="note"><strong>Imeldarcive</strong> dibuat sebagai website kenangan yang berdiri sendiri—terpisah dari undangan. Foto, tulisan pendek, tanggal, dan musik bisa ditambahkan kapan saja.</div>
+    </section>
+  </main>
+  <footer><span class="heart">♡</span> Imeldarcive</footer>
+</body>
+</html>
